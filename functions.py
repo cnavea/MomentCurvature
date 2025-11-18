@@ -89,6 +89,7 @@ class RebarMaterial:
         self.start = start
         if n_bars is not None:
             self.coords = self._generate_bar_coords()
+            self.xb = self.coords[:,0]
 
     def _generate_bar_coords(self) -> np.ndarray:
         #starting angle
